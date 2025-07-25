@@ -1,0 +1,16 @@
+"""The effect of random noise on working memory capacity of recurrent neural networks as a function of membrane time constant
+
+Working memory is a fundamental cognitive ability enabling the temporary storage of information,
+yet it's reliability is significantly compromised in noisy environments.
+In real-world settings, sensory input is rarely clean, and noise can interfere with both the encoding and maintenance of memory traces. 
+While this vulnerability is behaviorally observed, 
+the neural mechanisms by which input noise interacts with intrinsic network properties—such as the membrane time constant—to affect memory
+retention remain poorly understood. To address this gap, we hypothesized that working memory retention decreases with increasing input (gaussian)noise,
+influenced by the membrane time constant. To investigate this, we modeled this process using recurrent neural networks (RNNs),
+which can simulate the temporal dynamics of neural activity involved in short-term memory.
+We customized a trained working memory model using a RNN to predict inputs from firing rates.
+To simulate real-world uncertainty,
+we added discrete random noise to the input stream and evaluated memory performance using logistic regression to decode earlier inputs 
+from current neural activity. "The model reliably recalled input sequences under noise-free conditions, but as noise levels increased,
+memory retention was rapidly weakened over time, even at minimal noise levels. While simplified, Our model offers a framework for studying
+memory decay mechanisms, contributing to broader cognitive neuroscience questions about attention, short-term memory, and neural robustness in noisy environments."""
